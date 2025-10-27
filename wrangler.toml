@@ -1,0 +1,10 @@
+# wrangler.toml
+name = "my-python-worker"
+main = "asr_gradio.py"
+compatibility_date = "2025-10-27"
+
+[build]
+command = "pip install -r requirements.txt --target ."
+
+[placement]
+mode = "smart"
